@@ -24,12 +24,12 @@ input {
     width: 100%;
     border-radius: 10px;
     outline: none;
-    border: none;
+    /* border: none; */
 }
 
 button{
     outline: none;
-    border: none;
+    /* border: none; */
     position: absolute;
     padding: 10px;
     left: 313px;
@@ -38,7 +38,12 @@ button{
 }
 
 #msg{
+    display: none;
     margin: 10px;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#strength{
     font-family: 'Times New Roman', Times, serif;
 }
