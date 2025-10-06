@@ -34,6 +34,8 @@ copy.addEventListener('click',()=>{
         navigator.clipboard.writeText(pass.value)
         .then(()=>{
             copied.style.display = 'block';
+            copied.innerHTML = 'Copied!';
+            copied.style.color = '#26d730'
             setTimeout(() => {
                 copied.style.display ='';
             }, 2000);
@@ -43,6 +45,7 @@ copy.addEventListener('click',()=>{
     else{
         copied.innerHTML = 'Nothing to copy';
         copied.style.color = '#ff5925'
+        copied.style.display = 'block';
         setTimeout(() => {
             copied.style.display = '';
         }, 2000);
