@@ -36,3 +36,9 @@ button{
     cursor: pointer;
     border-radius: 0 10px 10px 0;
 }
+
+#msg{
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
