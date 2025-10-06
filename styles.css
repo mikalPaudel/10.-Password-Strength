@@ -47,3 +47,8 @@ button{
 #strength{
     font-family: 'Times New Roman', Times, serif;
 }
+
+#copied{
+    color:lime; 
+    margin-top:10px; 
+}
