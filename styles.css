@@ -16,6 +16,8 @@
 }
 .input-box{
     position: relative;
+    overflow: hidden;
+    width: 350px;
 }
 input {
     padding: 10px;
@@ -30,6 +32,7 @@ button{
     border: none;
     position: absolute;
     padding: 10px;
-    left: 150px;
+    left: 313px;
+    cursor: pointer;
     border-radius: 0 10px 10px 0;
 }
