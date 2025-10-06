@@ -51,4 +51,5 @@ button{
 #copied{
     color:lime; 
     margin-top:10px; 
+    display: none;
 }

@@ -1,7 +1,8 @@
 const pass = document.getElementById('password');
 const msg = document.getElementById('msg');
 const str = document.getElementById('strength');
-
+const copied = document.getElementById('copied');
+const copy = document.getElementById('copy');
 
 pass.addEventListener('input', ()=>{
     if(pass.value.length > 0){
@@ -25,5 +26,25 @@ pass.addEventListener('input', ()=>{
         str.innerHTML = 'strong';
         pass.style.borderColor = '#26d730';
         msg.style.color = '#26d730';
+    }
+})
+
+copy.addEventListener('click',()=>{
+    if(pass.value.trim() !== ''){
+        navigator.clipboard.writeText(pass.value)
+        .then(()=>{
+            copied.style.display = 'block';
+            setTimeout(() => {
+                copied.style.display ='';
+            }, 2000);
+        })
+        .catch(err => console.error('Copy Failed:', err));
+    }
+    else{
+        copied.innerHTML = 'Nothing to copy';
+        copied.style.color = '#ff5925'
+        setTimeout(() => {
+            copied.style.display = '';
+        }, 2000);
     }
 })
